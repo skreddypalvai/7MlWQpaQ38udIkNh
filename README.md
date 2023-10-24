@@ -62,4 +62,15 @@ Target(y) - has the client subscribed to a term deposit? (binary)
   ![download (1)](https://github.com/skreddypalvai/7MlWQpaQ38udIkNh---Apziva-Project/assets/137756791/2ee0a0c1-475c-497d-b37d-f32a39f26474)
 * The SHAP analysis shows that duration, contact method, and marital status are important features:
   ![download (1)](https://github.com/skreddypalvai/7MlWQpaQ38udIkNh---Apziva-Project/assets/137756791/f24234db-a918-472b-9d8c-b2ff1382c94f)
+
 You can see two different colors. If there are more blue values on the negative side of the SHAP graph, it indicates that lower values of the feature have a stronger negative impact on the model's prediction. In this case, lower 'duration' values have a negative impact on the model.
+
+##### **Adaboost Classifier**
+*  The Adaboost classifier reached 93% accuracy and a 78% ROC-AUC score. After fine-tuning hyperparameters and fitting, it achieved an average F1 score of 76%, which outperforms the other two models.
+  ![download (1)](https://github.com/skreddypalvai/7MlWQpaQ38udIkNh---Apziva-Project/assets/137756791/5bff766c-5be6-4b7c-8fde-4347fb891af7)
+
+* The Adaboost's SHAP analysis reveals the same three most important features as the Random Forest model.
+  ![download (1)](https://github.com/skreddypalvai/7MlWQpaQ38udIkNh---Apziva-Project/assets/137756791/efd9be82-88b8-47c9-bd48-72f3b1c87ed1)
+
+#### **Conclusion**:
+In summary, the most crucial feature is 'duration', followed by 'contact' and 'marital_status'. When examining the "duration" feature, you'll observe that it often has a low value alongside a negative SHAP value. This indicates that having less duration tends to result in a less favorable outcome. Therefore, European banking institutions should prioritize features like duration, contact method, and marital status. They should aim to extend the duration of interactions with customers to enhance the likelihood of subscriptions.
