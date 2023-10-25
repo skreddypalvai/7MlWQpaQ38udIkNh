@@ -5,6 +5,13 @@ We are interested in developing a robust machine learning system that leverages 
 
 Ultimately, we are looking for ways to improve the success rate for calls made to customers for any product that our clients offer. Towards this goal we are working on designing an ever evolving machine learning product that offers high success outcomes while offering interpretability for our clients to make informed decisions.
 
+
+
+#### **Objective**:
+*    Hit %81 or above accuracy by evaluating with 5-fold cross validation and reporting the average performance score.
+*    We are also interested in finding customers who are more likely to buy the investment product. Determine the segment(s) of customers our client should prioritize.
+*   What makes the customers buy? Tell us which feature we should be focusing more on. 
+
 #### **Data Dictionary**:
 The data comes from direct marketing efforts of a European banking institution. The marketing campaign involves making a phone call to a customer, often multiple times to ensure a product subscription, in this case a term deposit. Term deposits are usually short-term deposits with maturities ranging from one month to a few years. The customer must understand when buying a term deposit that they can withdraw their funds only after the term ends. All customer information that might reveal personal information is removed due to privacy concerns.
 
@@ -39,10 +46,6 @@ Campaign: number of contacts performed during this campaign and for this client 
 Target(y) - has the client subscribed to a term deposit? (binary)
 
 
-#### **Objective**:
-*    Hit %81 or above accuracy by evaluating with 5-fold cross validation and reporting the average performance score.
-*    We are also interested in finding customers who are more likely to buy the investment product. Determine the segment(s) of customers our client should prioritize.
-*   What makes the customers buy? Tell us which feature we should be focusing more on. 
 
 ####  **Project Overview**:
 *  The main goal is to predict if the customer will subscribe to a term deposit or not. Most of the features are categorical and only few are numerical, we need to analyze them efficiently by fitting the best models with optimal hyperparameter values. We will be using cross validation techniques for better training.
